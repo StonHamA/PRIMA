@@ -32,7 +32,7 @@ python train_prima.py \
   --text-model 'text-model' \
   --batch-size 8 --epochs 5 --device cuda
 ```
-Key hyperparameters follow the paper: temperature 0.07, modality loss weight alpha=0.7, prototype regularizer beta=0.2, and 80 prototypes (prototype_k=80). Checkpoints named prima_epoch_{n}.pt store the indexer, prototype repository, optimizer, and scheduler states.
+Key hyperparameters follow the paper: temperature 0.07, modality loss weight alpha=0.7, prototype regularizer beta=0.2, and 80 prototypes.
 
 ## Evaluation and Generation
 - **Retrieval**: Use MKI to embed queries, run FAISS search, and apply PGR weights to group evidence by semantic prototype.
